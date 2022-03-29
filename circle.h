@@ -14,17 +14,17 @@ public:
     double x;
     double y;
     double r;
-    void R(){
-        cout << r << endl;
+    double R(){
+        return r;
     }
-    void D() {
-        cout << r * 2 << endl;
+    double D() {
+        return r * 2;
     }
-    void S() {
-        cout << 2 * Pi * r * r << endl;
+    double S() {
+        return 2 * 3.14 * r * r;
     }
-    void P() {
-        cout << 2 * Pi * r << endl;
+    double P() {
+        return 2 * 3.14 * r;
     }
     void Fields() {
         cout << x - r << " " << x + r << " " << y - r << " " << y + r << endl;
@@ -32,9 +32,10 @@ public:
 };
 class Point
 {
-    double x;
-    double y;
+public:
+    double x1;
+    double y1;
 
 };
 void Fields(Point, Circle);
-const double Circle::Pi = 3.14159265358979323;
+
